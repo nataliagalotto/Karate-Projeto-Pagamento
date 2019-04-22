@@ -1,0 +1,1 @@
+{"features":1,"ignored":0,"efficiency":0.05286626195546951,"failures":{"com.uol.pagseguro.volozhin.features.TesteProjPag":"TesteProjPag.feature:6 - null"},"totalTime":273.054243,"threads":5,"scenarios":1,"failed":1,"passed":0,"version":"0.9.1","elapsedTime":1033.0}

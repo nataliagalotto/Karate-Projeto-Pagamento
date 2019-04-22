@@ -1,0 +1,23 @@
+14:45:12.885 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:45:13.348 request:
+1 > POST https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 100
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: k2239a4fv6.execute-api.us-east-1.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"headers":[],"url":"http://[2001:12ff:0:4::22]:8080","body":{"teste":"teste1"},"eventType":"123ab"}
+
+14:45:14.765 response time in milliseconds: 1416,19
+1 < 400
+1 < Connection: keep-alive
+1 < Content-Length: 62
+1 < Content-Type: application/json
+1 < Date: Tue, 09 Apr 2019 17:45:16 GMT
+1 < Server: Server
+1 < X-Amzn-Trace-Id: Root=1-5cacda2b-65bc6097d7f8600303c3b0d0;Sampled=0
+1 < x-amz-apigw-id: X4cG2GSHIAMF1rQ=
+1 < x-amzn-RequestId: 3bcc2983-5aef-11e9-b3ed-db46d3ef4eed
+Validation errors: - field headers should not be empty or null
+

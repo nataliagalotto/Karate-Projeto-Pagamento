@@ -1,0 +1,316 @@
+<testsuite failures="0" name="com/uol/pagseguro/volozhin/features/ContratoAPIGateway.feature" skipped="0" tests="7" time="10.92101">
+  <testcase classname="com.uol.pagseguro.volozhin.features.ContratoAPIGateway" name="Request without URL, Event-type, Content-type, Body and Header - Negative" time="1.664305">
+    <system-out>* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request { } ......................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field url should not be empty or null - field body should not be empty or null - field eventType should not be empty or null - field headers should not be empty or null" . passed</system-out>
+  </testcase>
+  <testcase classname="com.uol.pagseguro.volozhin.features.ContratoAPIGateway" name="Request without Content-type in Internal Header - Negative" time="1.968576">
+    <system-out>* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request { } ......................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field url should not be empty or null - field body should not be empty or null - field eventType should not be empty or null - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request {"headers":[{}],"url":"http://[2001:12ff:0:4::22]:8080", "body":{"teste":"teste1"}, "eventType":"123ab"} . passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty or null" . passed</system-out>
+  </testcase>
+  <testcase classname="com.uol.pagseguro.volozhin.features.ContratoAPIGateway" name="Request with empty intern Header - Negative" time="1.868667">
+    <system-out>* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request { } ......................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field url should not be empty or null - field body should not be empty or null - field eventType should not be empty or null - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request {"headers":[{}],"url":"http://[2001:12ff:0:4::22]:8080", "body":{"teste":"teste1"}, "eventType":"123ab"} . passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request {"headers":[],"url":"http://[2001:12ff:0:4::22]:8080", "body":{"teste":"teste1"}, "eventType":"123ab"} . passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty or null" . passed</system-out>
+  </testcase>
+  <testcase classname="com.uol.pagseguro.volozhin.features.ContratoAPIGateway" name="Request with empty URL, Event-type, Content-type and body - Negative" time="1.919708">
+    <system-out>* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request { } ......................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field url should not be empty or null - field body should not be empty or null - field eventType should not be empty or null - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request {"headers":[{}],"url":"http://[2001:12ff:0:4::22]:8080", "body":{"teste":"teste1"}, "eventType":"123ab"} . passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request {"headers":[],"url":"http://[2001:12ff:0:4::22]:8080", "body":{"teste":"teste1"}, "eventType":"123ab"} . passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given def contentTypeInterno = '' ......................................... passed
+And def urlInterna = '' ................................................... passed
+And def testeBody = '' .................................................... passed
+And def eventTypeInterno = '' ............................................. passed
+And request read('request.json') .......................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field url should not be empty or null - field eventType should not be empty or null - field headers should not be empty" . passed</system-out>
+  </testcase>
+  <testcase classname="com.uol.pagseguro.volozhin.features.ContratoAPIGateway" name="Request with Empty Content-Type in internal Header - Negative" time="1.543702">
+    <system-out>* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request { } ......................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field url should not be empty or null - field body should not be empty or null - field eventType should not be empty or null - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request {"headers":[{}],"url":"http://[2001:12ff:0:4::22]:8080", "body":{"teste":"teste1"}, "eventType":"123ab"} . passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request {"headers":[],"url":"http://[2001:12ff:0:4::22]:8080", "body":{"teste":"teste1"}, "eventType":"123ab"} . passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given def contentTypeInterno = '' ......................................... passed
+And def urlInterna = '' ................................................... passed
+And def testeBody = '' .................................................... passed
+And def eventTypeInterno = '' ............................................. passed
+And request read('request.json') .......................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field url should not be empty or null - field eventType should not be empty or null - field headers should not be empty" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given def contentTypeInterno = '' ......................................... passed
+And request read('request.json') .......................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty" . passed</system-out>
+  </testcase>
+  <testcase classname="com.uol.pagseguro.volozhin.features.ContratoAPIGateway" name="Request with empty (external) Content-type - Negative" time="0.601312">
+    <system-out>* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request { } ......................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field url should not be empty or null - field body should not be empty or null - field eventType should not be empty or null - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request {"headers":[{}],"url":"http://[2001:12ff:0:4::22]:8080", "body":{"teste":"teste1"}, "eventType":"123ab"} . passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request {"headers":[],"url":"http://[2001:12ff:0:4::22]:8080", "body":{"teste":"teste1"}, "eventType":"123ab"} . passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given def contentTypeInterno = '' ......................................... passed
+And def urlInterna = '' ................................................... passed
+And def testeBody = '' .................................................... passed
+And def eventTypeInterno = '' ............................................. passed
+And request read('request.json') .......................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field url should not be empty or null - field eventType should not be empty or null - field headers should not be empty" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given def contentTypeInterno = '' ......................................... passed
+And request read('request.json') .......................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given header Content-Type = '' ............................................ passed
+And request read('request.json') .......................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - invalid request content-type" . passed</system-out>
+  </testcase>
+  <testcase classname="com.uol.pagseguro.volozhin.features.ContratoAPIGateway" name="Full Contract - Positive" time="1.354741">
+    <system-out>* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request { } ......................................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field url should not be empty or null - field body should not be empty or null - field eventType should not be empty or null - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request {"headers":[{}],"url":"http://[2001:12ff:0:4::22]:8080", "body":{"teste":"teste1"}, "eventType":"123ab"} . passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request {"headers":[],"url":"http://[2001:12ff:0:4::22]:8080", "body":{"teste":"teste1"}, "eventType":"123ab"} . passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty or null" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given def contentTypeInterno = '' ......................................... passed
+And def urlInterna = '' ................................................... passed
+And def testeBody = '' .................................................... passed
+And def eventTypeInterno = '' ............................................. passed
+And request read('request.json') .......................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field url should not be empty or null - field eventType should not be empty or null - field headers should not be empty" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given def contentTypeInterno = '' ......................................... passed
+And request read('request.json') .......................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - field headers should not be empty" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given header Content-Type = '' ............................................ passed
+And request read('request.json') .......................................... passed
+When method post .......................................................... passed
+Then status 400 ........................................................... passed
+And match response == "Validation errors: - invalid request content-type" . passed
+* url 'https://k2239a4fv6.execute-api.us-east-1.amazonaws.com/dev/notifications' . passed
+* header Content-Type = 'application/json' ................................ passed
+* def contentTypeInterno = 'application/json' ............................. passed
+* def urlInterna = 'http://[2001:12ff:0:4::22]:8080' ...................... passed
+* def testeBody = '\"teste1\"' ............................................ passed
+* def eventTypeInterno = '123ab' .......................................... passed
+Given request read('request.json') ........................................ passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

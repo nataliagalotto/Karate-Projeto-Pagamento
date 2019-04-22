@@ -1,0 +1,12 @@
+<testsuite failures="1" name="com/uol/pagseguro/volozhin/features/TesteProjPag.feature" skipped="0" tests="1" time="0.273054">
+  <testcase classname="com.uol.pagseguro.volozhin.features.TesteProjPag" name="Full Contract - Positive" time="0.273054">
+    <failure message="TesteProjPag.feature:6 - null">Given url 'localhost:8080/categorias/2' ................................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: TesteProjPag.feature:6 - null
+	at ✽.When method get (TesteProjPag.feature:6)
+
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>

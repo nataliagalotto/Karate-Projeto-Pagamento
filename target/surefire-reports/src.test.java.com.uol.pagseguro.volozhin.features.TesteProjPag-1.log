@@ -1,0 +1,2 @@
+12:39:52.690 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:39:53.011 http request failed: null
