@@ -1,0 +1,92 @@
+{
+  "id": 1,
+  "instante": "30/09/2017 13:32",
+  "pagamento": {
+    "id": 1,
+    "estado": "PAGO",
+    "numeroDeParcelas": 6
+  },
+  "cliente": {
+    "id": 1,
+    "nome": "Maria Silva",
+    "email": "maria@gmail.com",
+    "cpfOutCnpj": "36378912377",
+    "tipo": "PESSOAFISICA",
+    "enderecos": [
+      {
+        "id": 1,
+        "logdradouro": "Rua Flores",
+        "numero": "300",
+        "complemento": "Apt 40 ",
+        "bairro": "Jardim",
+        "cep": "38111234",
+        "cidade": {
+          "id": 1,
+          "nome": "Uberlândia",
+          "estado": {
+            "id": 1,
+            "nome": "Minas Gerais"
+          }
+        }
+      },
+      {
+        "id": 2,
+        "logdradouro": "Av Flores",
+        "numero": "105",
+        "complemento": "Apt 40 ",
+        "bairro": "Centro",
+        "cep": "38111234",
+        "cidade": {
+          "id": 2,
+          "nome": "São Paulo",
+          "estado": {
+            "id": 2,
+            "nome": "São Paulo"
+          }
+        }
+      }
+    ],
+    "telefones": [
+      "27363323",
+      "93838393"
+    ]
+  },
+  "enderecoDeEntrega": {
+    "id": 1,
+    "logdradouro": "Rua Flores",
+    "numero": "300",
+    "complemento": "Apt 40 ",
+    "bairro": "Jardim",
+    "cep": "38111234",
+    "cidade": {
+      "id": 1,
+      "nome": "Uberlândia",
+      "estado": {
+        "id": 1,
+        "nome": "Minas Gerais"
+      }
+    }
+  },
+  "itens": [
+    {
+      "desconto": 0,
+      "quantidade": 1,
+      "preco": 2000,
+      "produto": {
+        "id": 1,
+        "nome": "Computador",
+        "preco": 2000
+      }
+    },
+    {
+      "desconto": 0,
+      "quantidade": 2,
+      "preco": 80,
+      "produto": {
+        "id": 3,
+        "nome": "Mouse",
+        "preco": 80
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "nome": "Informática",
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Computador",
+      "preco": 2000
+    },
+    {
+      "id": 2,
+      "nome": "Impressora",
+      "preco": 800
+    },
+    {
+      "id": 3,
+      "nome": "Mouse",
+      "preco": 80
+    }
+  ]
+}

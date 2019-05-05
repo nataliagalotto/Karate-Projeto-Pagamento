@@ -1,0 +1,16 @@
+15:43:00.890 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:43:01.287 request:
+1 > GET http://localhost:8080/pedidos/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+
+15:43:01.357 response time in milliseconds: 64,63
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Sun, 05 May 2019 18:43:01 GMT
+1 < Transfer-Encoding: chunked
+{"id":1,"instante":"30/09/2017 13:32","pagamento":{"id":1,"estado":"PAGO","numeroDeParcelas":6},"cliente":{"id":1,"nome":"Maria Silva","email":"maria@gmail.com","cpfOutCnpj":"36378912377","tipo":"PESSOAFISICA","enderecos":[{"id":1,"logdradouro":"Rua Flores","numero":"300","complemento":"Apt 40 ","bairro":"Jardim","cep":"38111234","cidade":{"id":1,"nome":"Uberlândia","estado":{"id":1,"nome":"Minas Gerais"}}},{"id":2,"logdradouro":"Av Flores","numero":"105","complemento":"Apt 40 ","bairro":"Centro","cep":"38111234","cidade":{"id":2,"nome":"São Paulo","estado":{"id":2,"nome":"São Paulo"}}}],"telefones":["27363323","93838393"]},"enderecoDeEntrega":{"id":1,"logdradouro":"Rua Flores","numero":"300","complemento":"Apt 40 ","bairro":"Jardim","cep":"38111234","cidade":{"id":1,"nome":"Uberlândia","estado":{"id":1,"nome":"Minas Gerais"}}},"itens":[{"desconto":0.0,"quantidade":1,"preco":2000.0,"produto":{"id":1,"nome":"Computador","preco":2000.0}},{"desconto":0.0,"quantidade":2,"preco":80.0,"produto":{"id":3,"nome":"Mouse","preco":80.0}}]}
+

@@ -1,0 +1,18 @@
+15:37:56.141 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:37:56.146 request:
+1 > GET http://localhost:8080/clientes/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
+
+15:37:56.158 response time in milliseconds: 11,10
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Sun, 05 May 2019 18:37:56 GMT
+1 < Transfer-Encoding: chunked
+{"id":1,"nome":"Maria Silva","email":"maria@gmail.com","cpfOutCnpj":"36378912377","tipo":"PESSOAFISICA","enderecos":[{"id":1,"logdradouro":"Rua Flores","numero":"300","complemento":"Apt 40 ","bairro":"Jardim","cep":"38111234","cidade":{"id":1,"nome":"Uberlândia","estado":{"id":1,"nome":"Minas Gerais"}}},{"id":2,"logdradouro":"Av Flores","numero":"105","complemento":"Apt 40 ","bairro":"Centro","cep":"38111234","cidade":{"id":2,"nome":"São Paulo","estado":{"id":2,"nome":"São Paulo"}}}],"telefones":["27363323","93838393"]}
+
+e":"São Paulo"}}}],"telefones":["27363323","93838393"]}
+

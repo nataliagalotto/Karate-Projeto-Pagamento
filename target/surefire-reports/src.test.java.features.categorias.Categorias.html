@@ -45,7 +45,7 @@
   .embed img { width: 100%; }
 </style>
 
-<title>src.test.java.features.categorias.TesteProjPag</title>
+<title>src.test.java.features.categorias.Categorias</title>
 <script>window.onload = function() {
   var possibleModes = ['failed', 'skipped', 'passed'];
   var tests = {};
@@ -168,26 +168,26 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:5]</span><span class="scenario-name">List categorias</span>
+<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">List categorias</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'http://localhost:8080'</div>
-<div class="time-cell passed">0.004631</div>
+<div class="time-cell passed">0.003301</div>
 </div>
-<div class="preformatted">15:37:55.727 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">15:39:47.424 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
 <div class="step-cell passed">* header Accept = 'application/json'</div>
-<div class="time-cell passed">0.003735</div>
+<div class="time-cell passed">0.003952</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'categorias/1'</div>
-<div class="time-cell passed">0.004841</div>
+<div class="time-cell passed">0.003574</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.363977</div>
+<div class="time-cell passed">0.442039</div>
 </div>
-<div class="preformatted">15:37:56.041 request:
+<div class="preformatted">15:39:47.812 request:
 1 &gt; GET http://localhost:8080/categorias/1
 1 &gt; Accept: application/json
 1 &gt; Accept-Encoding: gzip,deflate
@@ -195,43 +195,43 @@
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 
-15:37:56.077 response time in milliseconds: 34,00
+15:39:47.849 response time in milliseconds: 35,19
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
-1 &lt; Date: Sun, 05 May 2019 18:37:56 GMT
+1 &lt; Date: Sun, 05 May 2019 18:39:47 GMT
 1 &lt; Transfer-Encoding: chunked
 {"id":1,"nome":"Inform&aacute;tica","produtos":[{"id":1,"nome":"Computador","preco":2000.0},{"id":2,"nome":"Impressora","preco":800.0},{"id":3,"nome":"Mouse","preco":80.0}]}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000016</div>
+<div class="time-cell passed">0.000015</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match response ==  read( 'categorias.json')</div>
-<div class="time-cell passed">0.026282</div>
+<div class="time-cell passed">0.025429</div>
 </div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [2:12]</span><span class="scenario-name">List clientes</span>
+<span class="scenario-keyword">Scenario: [2:13]</span><span class="scenario-name">List clientes</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'http://localhost:8080'</div>
-<div class="time-cell passed">0.000187</div>
+<div class="time-cell passed">0.000184</div>
 </div>
-<div class="preformatted">15:37:56.141 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">15:39:47.916 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
 <div class="step-cell passed">* header Accept = 'application/json'</div>
-<div class="time-cell passed">0.000119</div>
+<div class="time-cell passed">0.000176</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'clientes/1'</div>
-<div class="time-cell passed">0.002344</div>
+<div class="time-cell passed">0.003201</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.01359</div>
+<div class="time-cell passed">0.018065</div>
 </div>
-<div class="preformatted">15:37:56.146 request:
+<div class="preformatted">15:39:47.923 request:
 1 &gt; GET http://localhost:8080/clientes/1
 1 &gt; Accept: application/json
 1 &gt; Accept-Encoding: gzip,deflate
@@ -239,19 +239,19 @@
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_191)
 
-15:37:56.158 response time in milliseconds: 11,10
+15:39:47.938 response time in milliseconds: 14,82
 1 &lt; 200
 1 &lt; Content-Type: application/json;charset=UTF-8
-1 &lt; Date: Sun, 05 May 2019 18:37:56 GMT
+1 &lt; Date: Sun, 05 May 2019 18:39:47 GMT
 1 &lt; Transfer-Encoding: chunked
 {"id":1,"nome":"Maria Silva","email":"maria@gmail.com","cpfOutCnpj":"36378912377","tipo":"PESSOAFISICA","enderecos":[{"id":1,"logdradouro":"Rua Flores","numero":"300","complemento":"Apt 40 ","bairro":"Jardim","cep":"38111234","cidade":{"id":1,"nome":"Uberl&acirc;ndia","estado":{"id":1,"nome":"Minas Gerais"}}},{"id":2,"logdradouro":"Av Flores","numero":"105","complemento":"Apt 40 ","bairro":"Centro","cep":"38111234","cidade":{"id":2,"nome":"S&atilde;o Paulo","estado":{"id":2,"nome":"S&atilde;o Paulo"}}}],"telefones":["27363323","93838393"]}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000013</div>
+<div class="time-cell passed">0.000015</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And match  response == read('clientes.json')</div>
-<div class="time-cell passed">0.005937</div>
+<div class="time-cell passed">0.006331</div>
 </div>
 </div>
 </div>

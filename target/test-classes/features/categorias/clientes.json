@@ -1,0 +1,45 @@
+{
+  "id": 1,
+  "nome": "Maria Silva",
+  "email": "maria@gmail.com",
+  "cpfOutCnpj": "36378912377",
+  "tipo": "PESSOAFISICA",
+  "enderecos": [
+    {
+      "id": 1,
+      "logdradouro": "Rua Flores",
+      "numero": "300",
+      "complemento": "Apt 40 ",
+      "bairro": "Jardim",
+      "cep": "38111234",
+      "cidade": {
+        "id": 1,
+        "nome": "Uberlândia",
+        "estado": {
+          "id": 1,
+          "nome": "Minas Gerais"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "logdradouro": "Av Flores",
+      "numero": "105",
+      "complemento": "Apt 40 ",
+      "bairro": "Centro",
+      "cep": "38111234",
+      "cidade": {
+        "id": 2,
+        "nome": "São Paulo",
+        "estado": {
+          "id": 2,
+          "nome": "São Paulo"
+        }
+      }
+    }
+  ],
+  "telefones": [
+    "27363323",
+    "93838393"
+  ]
+}
